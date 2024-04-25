@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/mystyle.css"> 
+     <link rel="stylesheet" href="css/slick-animation.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+     <script src="js/angular.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/slick-animation.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/aos.js"></script>
+</head>
+<body ng-app='myApp' ng-controller='myCtrl'>
+  <div class="fa fa-chevron-up upBtn"></div>
+ <header>
+   
+     <div class='nav-logo'>
+          <div class="icons">
+              <div class="fa fa-bars"></div>
+        </div> 
+        <a href="movie.html" style="color:var(--theme-color);background:linear-gradient(to right,rgb(135, 1, 1) 10%,#4e0206 90%) !important;display: inline-block;padding: .0rem 3rem;clip-path:polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);">Anteqs</a>
+        </div>
+            <nav>
+            <a href="movie.html" class='home'>Home</a>
+            <a href="Lmovie.html" class='movies'>Movies</a>
+         
+            <a href="#service" class='service'>Services</a>
+            <a href="search.html"><i class="fa fa-search" style="font-size: 1.8rem;"></i> Search</a>
+            <div class='fa fa-sun themeBtn' style='color:white'></div>
+        </nav>
+         <select name="" id="" >
+                <option ng-repeat="x in languages">{{x}}</option>
+            </select>     
+        <div> 
+
+            <a href="#">Sign In</a>
+        </div>
+ </header>
+<!-- movies -->
+<main id="movies">
+<div id='carousel-container'>
+
+<div class="carousel-items car1" style="opacity: 1" >
+    <div class="content" style="padding: 10rem;">
+    <h2 data-delay-in="0.6" data-animation-in="fadeInLeft" data-duration-in="2.3"><span class="logo_animation">Anteqs</span></h2>
+    <h1 data-delay-in="0.8" data-animation-in="fadeInLeft" data-duration-in="2.45">Jungle Cruise</h1>
+<h5 data-delay-in="1" data-animation-in="fadeInUp" data-duration-in="2.7"><span>Description:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, exercitationem accusantium velit quibusdam itaque at sequi, aliquam doloribus magni perspiciatis repudiandae similique mollitia eum eius quo dicta saepe numquam qui!</h5>
+<button class="btn" data-delay-in="1" data-animation-in="fadeInUp" data-duration-in="2.9">Play Now</button>
+    </div>
+</div>
+
+<div class="carousel-items car2">
+    <div class="content">
+        <h2 data-animation-in="fadeInLeft"  data-delay-in="0.6" data-duration-in="2.3"><span class="logo_animation">Anteqs</span></h2>
+<h1  data-delay-in="0.8" data-animation-in="fadeInLeft" data-duration-in="2.45">Alaadin</h1>
+<h5  data-delay-in="1" data-animation-in="fadeInUp" data-duration-in="2.7"><span>Description:</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia magni dignissimos omnis eaque numquam hic laboriosam, placeat velit consectetur obcaecati fuga adipisci nam sint, delectus quis earum quo voluptatem deserunt.</h5>
+<button class="btn"  data-delay-in="1" data-animation-in="fadeInUp" data-duration-in="2.9">Play Now</button>
+    </div>
+</div>
+
+<div class="carousel-items car3">
+    <div class="content">
+        <h2  data-animation-in="fadeInLeft"  data-delay-in="0.6" data-duration-in="2.3"><span class="logo_animation">Anteqs</span></h2>
+ <h1 data-delay-in="0.8" data-animation-in="fadeInLeft" data-duration-in="2.45">Black Widow</h1>
+ <h5 data-delay-in="1" data-animation-in="fadeInUp" data-duration-in="2.7"><span>Description:</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore maxime fugiat itaque pariatur ipsum quibusdam sequi omnis! Ipsam obcaecati, magnam debitis nesciunt odit repellendus ad quas eius, aliquid, maiores deserunt!.</h5>
+ <button class="btn" data-delay-in="1" data-animation-in="fadeInUp" data-duration-in="2.9">Play Now</button>
+    </div>
+</div>
+</div>
+
+</main>
+<section id="movieSect">
+    <h2><span>Our Movies</span></h2>
+    <div class="movieBtnFilter">
+         <button class="active btnfilter active-filter-btn" data-filter="all">All</button>
+    <button class="btnfilter" data-filter="series">Series</button>
+    <button class="btnfilter" data-filter="marvel">Marvel</button>
+    <button class="btnfilter" data-filter="latest">Latest</button>
+    </div>
+   
+    <div id="movieSectContainer" >
+    <div class="movie series mv1"   data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="linear">
+        <div class="content">
+        <picture>
+          <img src="lmovieimage/img/Compressed Images/Aladdin-compressed.jpg" alt="Alaadin">
+        </picture>
+        <div class="details">
+          <p>Alaadin</p>
+          <p>&star;&star;&star;&star;&star;</p>
+          <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+        </div>
+        </div>
+<div class="movie marvel mv1"  data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000" data-aos-easing="linear">
+    <div class="content">
+         <picture>
+      <img src="lmovieimage/img/Compressed Images/AmzingSpiderMan2-compressed.jpg" alt="AmzingSpiderMan2">
+    </picture>
+    <div class="details">
+      <p>Amzing SpiderMan2</p>
+      <p>&star;&star;&star;&star;&star;</p>
+      <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+    </div> 
+    </div>
+  
+</div>
+<div class="movie marvel" data-aos="fade-down" data-aos-delay="800" data-aos-duration="7000" data-aos-easing="linear">
+    <div class="content">
+        <picture>
+      <img src="lmovieimage/img/Compressed Images/AntMan-compressed.jpg" alt="AntMan">
+    </picture>
+    <div class="details">
+      <p>Ant Man</p>
+      <p>&star;&star;&star;&star;&star;</p>
+      <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+    </div> 
+    </div>
+   
+ </div>
+ <div class="movie series mv2" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="linear">
+    <div class="content">
+       <picture>
+      <img src="lmovieimage/series/series-1.png" alt="MoonKnight">
+    </picture>
+    <div class="details">
+      <p>Moon Knight</p>
+      <p>&star;&star;&star;&star;&star;</p>
+      <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+    </div>  
+    </div>
+   
+ </div>
+ <div class="movie latest mv2" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000" data-aos-easing="linear">
+    <div class="content">
+        <picture>
+      <img src="lmovieimage/img/Compressed Images/Aquaman-compressed.jpg" alt="Aquaman">
+    </picture>
+    <div class="details">
+      <p>Aquaman</p>
+      <p>&star;&star;&star;&star;&star;</p>
+      <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+    </div>    
+    </div>
+
+ </div>
+ <div class="movie marvel"  data-aos="fade-right"  data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="linear">
+    <div class="content">
+         <picture>
+      <img src="lmovieimage/img/Compressed Images/AvengersEndGame-compressed.jpg" alt="AvengersEndGame">
+    </picture>
+    <div class="details">
+      <p>End Game</p>
+      <p>&star;&star;&star;&star;&star;</p>
+      <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+    </div>
+    </div>
+   
+ </div>
+ <div class="movie series" data-aos="fade-right"  data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="linear">
+    <div class="content">
+  <picture>
+      <img src="lmovieimage/series/series-2.png" alt="Halo">
+    </picture>
+    <div class="details">
+      <p>Halo</p>
+      <p>&star;&star;&star;&star;&star;</p>
+      <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+    </div>
+    </div>
+  
+ </div>
+ <div class="movie marvel" data-aos="fade-up" data-aos-delay="500" data-aos-duration="7000" data-aos-easing="linear">
+    <div class="content">
+     <picture>
+      <img src="lmovieimage/img/Compressed Images/BlackPanther-compressed.jpg" alt="BlackPanther">
+    </picture>
+    <div class="details">
+      <p>Black Panther</p>
+      <p>&star;&star;&star;&star;&star;</p>
+      <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+    </div>
+ </div>
+ </div>
+ <div class="movie series" data-aos="fade-left" data-aos-delay="500" data-aos-duration="9000" data-aos-easing="linear">
+    <div class="content">
+     <picture>
+      <img src="lmovieimage/series/flash.jpg" alt="The Flash">
+    </picture>
+    <div class="details">
+      <p>The Flash</p>
+      <p>&star;&star;&star;&star;&star;</p>
+      <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+    </div>
+ </div>
+ </div>
+ <div class="movie latest" data-aos="fade-left" data-aos-delay="500" data-aos-duration="9000" data-aos-easing="linear">
+    <div class="content">
+     <picture>
+      <img src="lmovieimage/img/Compressed Images/Morbius-compressed.jpg" alt="Morbius">
+    </picture>
+    <div class="details">
+      <p>Morbius</p>
+      <p>&star;&star;&star;&star;&star;</p>
+      <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+    </div>
+ </div>
+ </div>
+</div>
+
+</section>
+
+<script>
+  AOS.init();
+</script>
+ <script src="js/query.js"></script>
+ <script src="js/ngscript.js"></script>

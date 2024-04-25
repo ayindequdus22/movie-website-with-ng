@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+     <script src="js/angular.min.js"></script>
+    <script src="js/jquery.js"></script>
+<style>
+</style>
+</head> 
+ 
+    <body ng-app='myApp' ng-controller='myCtrl'>
+      <div class="fa fa-chevron-up upBtn"></div>
+     <header>
+       
+         <div class='nav-logo'>
+              <div class="icons">
+                  <div class="fa fa-bars"></div>
+            </div> 
+            <a href="movie.html" style="    color:var(--theme-color);background:linear-gradient(to right,rgb(135, 1, 1) 10%,#4e0206 90%) !important;display: inline-block;padding: .4rem 3rem;clip-path:polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);">Anteqs</a>
+            </div>
+                <nav>
+                <a href="movie.html" class='home'>Home</a>
+                <a href="Lmovie.html" class='movies'>Movies</a>
+             
+                <a href="#service" class='service'>Services</a>
+                <a href="search.html"><i class="fa fa-search" style="font-size: 1.8rem;"></i> Search</a>
+                <div class='fa fa-sun themeBtn' style='color:white'></div>
+            </nav>
+             <select name="" id="" >
+                    <option ng-repeat="x in languages">{{x}}</option>
+                </select>     
+            <div> 
+    
+                <a href="#">Sign In</a>
+            </div>
+     </header>
+<section class="searchSect">
+    <div class="content">
+    <h3>Find Your Favourite,Old And Latest Movies Here.</h3>
+<div class="searchContainer">
+    <input type="search" id="searchInput"  required placeholder="find your favorite movies">
+    <input type="submit" id="searchBtn" value="search">
+</div>
+
+ </div>
+ <div class="searchItemContainer">
+    <div class="searchItem" >
+        <picture>
+            <img src="./searchImg/antMan.jpg" alt="antman">
+        </picture>
+        <div class="content">
+            <p>Ant-Man</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/aquaman.jpg" alt="aquaman">
+        </picture>
+        <div class="content">
+            <p>AquaMan</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/AvengersInfinityWar-compressed.jpg" alt="AvengersInfinitywar">
+        </picture>
+        <div class="content">
+            <p>Avengers InfinityWar</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/batmanvsSPman.jpg" alt="">
+        </picture>
+        <div class="content">
+            <p>Batman vs Superman</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/blackpanther.jpg" alt="blackpanther">
+        </picture>
+        <div class="content">
+            <p>Black Panther</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/blackWidow.jpg" alt="blackWidow">
+        </picture>
+        <div class="content">
+            <p>Black Widow</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/Bloodwars.jpg" alt="Bloodwars">
+        </picture>
+        <div class="content">
+            <p>Blood Wars</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/captain Marvel.jpg" alt="captain marvel">
+        </picture>
+        <div class="content">
+            <p>Captain Marvel</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/doctorstrange.jpeg" alt="doctorstrange">
+        </picture>
+        <div class="content">
+            <p>Doctor Strange</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/dunkerk.jpg" alt="dunkerk">
+        </picture>
+        <div class="content">
+            <p>Dunkerk</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/eternals.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Eternals</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/flash.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Flash</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/gog.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Guardians of the Galaxy</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/halo (1).png" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Halo</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/hawkeye.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Hawkeye</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/inception.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Inception</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/ironlady.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Iron Lady</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/IronMan.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Iron Man</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/jc.jpeg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Jungle Cruise</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/jsa.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Justice League</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/JohnWick.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>John Wick</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/loki (1).jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Loki</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/m8.png" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Bumble Bee</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/moneyheist.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Money Heist</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/moonknight.png" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Moon Knight</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/mortalEngines.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Mortal Engines</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+       <div class="searchItem">
+        <picture>
+            <img src="./searchImg/rampage.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Rampage</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/red-notice.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Red Notice</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/Rogue-One.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Rogue One</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/shang-chi.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Shang-Chi</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/squidgame.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Squid Game</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/Star Trek.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Star Trek</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/StarWars.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Star Wars</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/thor.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Thor</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/venom.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Venom</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/warcraft.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Warcraft</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/wolverine.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Wolverine</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/WonderWoman-compressed.jpg" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Wonder Woman</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/adamp.png" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>The Adam Project</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/freguy.png" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Free Guy</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+    <div class="searchItem">
+        <picture>
+            <img src="./searchImg/uncharted.png" alt="eternals">
+        </picture>
+        <div class="content">
+            <p>Uncharted</p>
+            <p>&star;&star;&star;&star;&star;</p>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button> 
+        </div>
+    </div>
+
+  
+ </div>
+</section>
+
+
+<section class="news">
+    <h1>News Letter</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <form action="">
+      <input type="email" placeholder="Please Enter Your Email">
+      <input type="submit" class="btn">
+    </form>
+  </section>
+
+
+<script>
+$('.preloader').delay(2000).fadeOut('slow');
+setTimeout(function() {   
+    $('html').animate({scrollTop: 0});
+        $('html').css("scrollBehavior", "auto");
+    },2000);
+    
+$(document).ready(function(){
+    $('.fa-bars').click(function(){
+    $('nav').toggleClass('active');
+  });
+  // dark and light mode
+  $('.themeBtn').click(function(){
+    $('body').toggleClass('darktheme');
+    $(this).toggleClass('fa-sun').addClass('fa-moon'); 
+  });
+  $(window).scroll(function(){
+    $('.upBtn').click(function(){
+      $('html').animate({scrollTop: 0});
+      // removing smooth scroll on slide-up button click
+      $('html').css("scrollBehavior", "auto");
+});
+
+    if($(window).scrollTop() > 20){
+      $('header').addClass('active');
+    }
+    else{
+      $('header').removeClass('active');
+    };
+    if($(window).scrollTop() > 120){
+      $('.upBtn').addClass('active');
+    }
+    else{
+      $('.upBtn').removeClass('active');
+    }
+    $('nav').removeClass('active');
+  });
+$('.searchContainer #searchBtn').click(function(){
+  if($('#searchInput').val() == ''){    
+        window.location.assign("./pgnotfound.html")
+   }
+else{
+    
+}
+});
+ 
+$('#searchInput').focus(function (){
+          $('.searchContainer #searchBtn').click(function(){  
+        const searchInputFilter = $('#searchInput').val().toLowerCase();
+        const searchItem = document.querySelectorAll('.searchItem');
+
+
+   searchItem.forEach((item) => {
+let text = item.textContent.toLowerCase();
+if(searchInputFilter == ''){
+   item.classList.remove('active');
+}
+else if(text.includes(searchInputFilter)){
+       
+  item.classList.add('active');  
+}
+else{
+    // window.location.assign("../pgnotfound.html");
+
+}
+ });
+
+    });
+    })
+  
+})
+</script>
+    
+     <script src="js/ngscript.js"></script>
+    </body>
+    </html>

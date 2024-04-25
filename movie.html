@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/mystyle.css">
+  <script src="js/angular.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/scrollreveal.js"></script>
+  <link rel="stylesheet" href="css/animate.min.css">
+  <script src="js/slick-animation.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <link rel="stylesheet" href="css/slick-animation.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <script src="js/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <script src="js/swiper-bundle.min.js"></script>
+</head>
+
+<body ng-app='myApp' ng-controller='myCtrl'>
+  <div class="preloader"></div>
+  <div class="body">
+    <div class="fa fa-chevron-up upBtn"></div>
+    <header>
+
+      <div class='nav-logo'>
+        <div class="icons">
+          <div class="fa fa-bars"></div>
+        </div>
+        <a href="movie.html"
+          style="    color:var(--theme-color);background:linear-gradient(to right,rgb(135, 1, 1) 10%,#4e0206 90%) !important;display: inline-block;padding: .4rem 3rem;clip-path:polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);">Anteqs</a>
+      </div>
+      <nav>
+        <a href="movie.html" class='home'>Home</a>
+        <a href="Lmovie.html" class='movies'>Movies</a>
+
+        <a href="#service" class='service'>Services</a>
+        <a href="search.html"><i class="fa fa-search" style="font-size: 1.8rem;"></i> Search</a>
+        <div class='fa fa-sun themeBtn' style='color:white'></div>
+      </nav>
+      <select name="" id="">
+        <option ng-repeat="x in languages">{{x}}</option>
+      </select>
+      <div>
+
+        <a href="#">Sign In</a>
+      </div>
+    </header>
+    <section id="home">
+      <div class="carousel-container active">
+        <div class="carousel">
+          <div class="content">
+            <!-- <h3 style='font-family: sans-serif !important;' class="logo_animation">Anteqs</h3> -->
+            <h1>Morbius:<br>The Bat Of Man kind</h1>
+            <div class='movieDes'>
+              <p><span>&star;</span><span>&star;</span><span>&star;</span> <span style='padding:0 2rem;'>7.5likes</span>
+              </p>
+              <span
+                style='background-color:#6c757D;border-radius:10%;width: 5rem;padding:01rem 0;font-family: sans-serif;;margin: 0;height: 4.3rem;text-align: center;font-size: 2rem;color: white;'>+13</span>
+            </div>
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+          </div>
+          <div class="trailer">
+            <h3> <i class="fas fa-circle-play"></i> Watch Trailer</h3>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="content">
+            <h1>Avengers:<br>The Age Of Utron</h1>
+
+            <div class='movieDes'>
+              <p><span>&star;</span><span>&star;</span><span>&star;</span><span>&star;</span><span>&star;</span> <span
+                  style='padding:0 2rem;'>75likes</span></p>
+              <span
+                style='background-color:#6c757D;border-radius:10%;width: 5rem;padding:01rem 0;font-family: sans-serif;;margin: 0;height: 4.3rem;text-align: center;font-size: 2rem;color: white;'>PG</span>
+            </div>
+
+            <button class='btn'><i class='fas fa-play'></i>Watch Now</button>
+
+          </div>
+
+          <div class="trailer">
+            <h3> <i class="fas fa-circle-play"></i> Watch Trailer</h3>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="content">
+            <h1>Doctor Strange:<br>Multiverse Of Madness</h1>
+            <div class='movieDes'>
+              <p>
+                <span>&star;</span><span>&star;</span><span>&star;</span><span>&star;</span><span>&star;</span>
+                <span style='padding:0 2rem;'>105likes</span>
+              </p>
+              <span
+                style='background-color:#6c757D;border-radius:10%;width: 5rem;padding:01rem 0;font-family: sans-serif;;margin: 0;height: 4.3rem;text-align: center;font-size: 2rem;color: white;'>+9</span>
+            </div>
+
+            <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+
+          </div>
+          <div class="trailer">
+            <h3> <i class="fas fa-circle-play"></i> Watch Trailer</h3>
+          </div>
+        </div>
+      </div>
+      <div id="prev" class="fas fa-chevron-left"></div>
+      <div id="next" class="fas fa-angle-right"></div>
+    </section>
+
+
+    <section id='popular'>
+      <div>
+        <div class='heading'>
+          <h3>Popular Movies</h3>
+        </div>
+        <div class="movie-container">
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/jz2DY4QuAnnYK3Gsm2h9b0mND7s.jpg" alt="agent of shield">
+            </picture>
+            <div class="details">
+              <p>Wonder Woman</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+          </div>
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/aos.jpg" alt="agent of shield">
+            </picture>
+            <div class="details">
+              <p>Aos</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+          </div>
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/eternals.jpg" alt="the Eternals">
+            </picture>
+            <div class="details">
+              <p>Eternals</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+
+          </div>
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/falconsoldier.jpg" alt="The falcon And Winter Soldier">
+            </picture>
+            <div class="details">
+              <p>Falcon Soldier</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+
+          </div>
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/flash.jpg" alt="The Flash">
+            </picture>
+            <div class="details">
+              <p>The Flash</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+
+          </div>
+
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/hawkeye.jpg" alt="Hawkeye">
+            </picture>
+            <div class="details">
+              <p>Hawkeye</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/jmji.jpg" alt="Jungle Cruise">
+            </picture>
+            <div class="details">
+              <p>Jungle Cruise</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+
+          </div>
+
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/loki (1).jpg" alt="Loki">
+            </picture>
+            <div class="details">
+              <p>Loki</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/moneyheist.jpg" alt="Money Heist">
+            </picture>
+            <div class="details">
+              <p>Money Heist</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+
+          </div>
+
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/shang-chi.jpg" alt="Shang-chi And The Legend Of The Ten Rings">
+            </picture>
+            <div class="details">
+              <p>Shang-chi</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+
+          </div>
+
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/spectre.jpg" alt="Spectre">
+            </picture>
+            <div class="details">
+              <p>Spectre</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+          </div>
+
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/spiderman.jpg" alt="SpiderMan">
+            </picture>
+            <div class="details">
+              <p>SpiderMan</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+
+          </div>
+
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/squidgame.jpg" alt="Squidgame">
+            </picture>
+            <div class="details">
+              <p>Squidgame</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+
+          </div>
+
+          <div class="movies">
+            <picture>
+              <img src="./carouselimages/lonely/wolverine.jpg" alt="Wolverine">
+            </picture>
+            <div class="details">
+              <p>Wolverine</p>
+              <p>&star;&star;&star;&star;&star;</p>
+              <button class='btn'><i class='fas fa-play'></i> Watch Now</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="recommended">
+      <div class="heading">
+        <p>Recommended</p>
+        <a href="#">View All <i style="font-size:1.9rem;padding:1rem 0;" class="fa fa-arrow-right"></i></a>
+      </div>
+      <div class="owl-carousel swiper">
+        <div class="swiper-wrapper">
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+          <div class="owl swiper-slide slide"></div>
+        </div>
+        <div class="owlAngles prevArrow fa fa-chevron-left"></div>
+        <div class="owlAngles nextArrow fa fa-chevron-right"></div>
+      </div>
+    </section>
+
+    <div class="CountD" style="padding-top: 10rem;text-align:center">
+
+      <div class="heading">
+        <h4>Coming Soon</h4>
+        <a href="#">View All <i style="font-size:1.9rem;padding:1rem 0;" class="fa fa-arrow-right"></i></a>
+      </div>
+
+      <div class="countContainer">
+        <div class="Countbuttons">
+          <button class="active countdownBtn">Countdown</button>
+          <button class="overviewBtn">Overview</button>
+          <button class="episodeBtn">Episodes</button>
+          <button class="similarBtn">Similar Like This</button>
+        </div>
+        <div class="countcontainer1">
+          <div class="countBox1 active countbox">
+            <h1 style="padding:3rem 0;font-size: 9rem;">Legacies</h1>
+
+            <div class="timing">
+              <div class="box">
+                <h3 id="day1">00</h3>
+                <span style="font-size: 2.5rem;">day</span>
+              </div>
+              <div class="box">
+                <h3 id="hour1">00</h3>
+                <span style="font-size: 2.5rem;">hour</span>
+              </div>
+              <div class="box">
+                <h3 id="minute1">00</h3>
+                <span style="font-size: 2.5rem;">minute</span>
+              </div>
+              <div class="box">
+                <h3 id="second1">00</h3>
+                <span style="font-size: 2.5rem;">second</span>
+              </div>
+            </div>
+          </div>
+          <div class="overview1  overview" style="text-align:left;">
+            <h1 style="padding:2rem 0;color:white">Legacies</h1>
+            <div class="flexContainer">
+              <p>16+</p>
+              <p>6 seasons</p>
+              <p>2018</p>
+            </div>
+            <div class="content">
+              <p class="about"><span>About:</span>Hope Mikaelson,a tribrid daughter of a Vamipire/Werewolf hybrid and
+                Werewolf,makes her way into the world.</p>
+              <div style="display: flex;margin: 1rem 0 1.5rem;">
+                <button class="btn" style="width:15rem;height:4rem;"><i class='fas fa-play'></i>Play Now</button>
+                <p style='margin:0 3rem'>My List</p>
+              </div>
+
+              <p class="paddedparagraphs"><span>Starring:</span>Danielle Rose Russell,Aria Shahghasemi and Quincy Fose.
+              </p>
+              <p class="paddedparagraphs"><span>Genres:</span>Adventure,Drama,Fantasy.</p>
+              <p class="paddedparagraphs"><span>Creators:</span>Julie Plec.</p>
+            </div>
+
+          </div>
+          <div class="episodes1 episode   " style="text-align:left;">
+            <h1>Legacies</h1>
+            <div class="flexContainer" style="padding:3rem 0">
+              <p>16+</p>
+              <p>6 seasons</p>
+              <p>2018</p>
+            </div>
+            <select name="" id="select">
+              <option value="season1">Season1</option>
+              <option value="season2">Season2</option>
+              <option value="season3">Season3</option>
+              <option value="season4">Season4</option>
+              <option value="season5">Season5</option>
+              <option value="season6">Season6</option>
+            </select>
+            <div id="seasons">
+              <div class="season1 ">
+                <div class=" episode">
+                  <img src="coundown/lbg.jpg" alt="Legacies">
+                  <div class="content">
+                    <p>Episode1</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
+                  </div>
+                </div>
+                <div class=" episode">
+                  <img src="coundown/xgRp61xUEUMZNpHUBnGsErkqZTj.jpg" alt="">
+                  <div class="content">
+                    <p>Episode2</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
+                  </div>
+                </div>
+                <div class=" episode">
+                  <img src="coundown/1Uhoi348GEg4DObGrVLNUqtKtdu.jpg" alt="">
+                  <div class="content">
+                    <p>Episode3</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
+                  </div>
+                </div>
+                <div class=" episode">
+                  <img src="coundown/avzvKEK3xPfUiQExQXcUKmpuY7o.jpg" alt="">
+                  <div class="content">
+                    <p>Episode4</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing eli</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="similar1 similar " style="text-align:left;">
+            <h1>Similar Movies</h1>
+            <div class="similarmovies">
+              <div class="movies">
+                <img src="coundown/740full-teen-wolf-screenshot.jpg" alt="">
+                <div class="content">
+                  <h4>Teen Wolf</h4>
+                  <p>An average high school student and his best friend get caught up in some trouble causing him to
+                    receive a werewolf bite.As a result they find themselves in the middle of all sorts of drama in
+                    Beacon Hills</p>
+                </div>
+              </div>
+              <div class="movies">
+                <img src="coundown/originalsingles.jpg" alt="">
+                <div class="content">
+                  <h4>The Originals</h4>
+                  <p>A family of power-hungry thousand-year-old vampires look to take back the city that they built and
+                    dominate all those who have done them wrong.
+                    Watch out for this lit movie.
+                  </p>
+                </div>
+              </div>
+              <div class="movies">
+                <img src="coundown/o.jpg" alt="">
+                <div class="content">
+                  <h4>Vampire Diaries</h4>
+                  <p>The lives,loves,dangers and disasters in the town,Mystic Falls,Virginia.Creatures of unspeakable
+                    horro lurk beneath thiss town as teenage girl is suddenly torn between two vampire brothers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <section class="news">
+        <h1>News Letter</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <form action="">
+          <input type="email" placeholder="Please Enter Your Email">
+          <input type="submit" class="btn">
+        </form>
+      </section>
+    
+
+    </div>
+    <script src="js/query.js"></script>
+    <script src="js/ngscript.js"></script>
+</body>
+
+</html>
